@@ -1,0 +1,24 @@
+.h1-index {
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h3 {
+    font-size: 15pt;
+}
+
+.degree-location {
+    margin-top: 2px;
+    font-size: 15pt;
+}
+
+.degree-title {
+    font-weight: bold;
+}
+
+.degree-major {
+    line-height: 1px;
+}
