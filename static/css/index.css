@@ -1,0 +1,41 @@
+h1 {
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Education styling */
+.degree-location {
+    margin-top: 2px;
+    font-size: 15pt;
+}
+.degree-title {
+    font-weight: bold;
+}
+.degree-major {
+    line-height: 1px;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 18pt;
+}
+.project-location {
+    margin-top: -20px;
+    font-size: 18pt;
+}
+

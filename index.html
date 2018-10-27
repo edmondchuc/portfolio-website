@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Edmond Chuc</title>
+
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-        <link rel="stylesheet" href="css/index.css">
+        <!-- Override some of the materializecss styling -->
+        <link rel="stylesheet" href="static/css/index.css">
     </head>
     <body>
         <!--HEADER-->
@@ -31,7 +30,7 @@
         <div class="container">
             <!--TITLE-->
             <header>
-                <h1 class="h1-index center-align">Welcome to my portfolio website</h1>
+                <h1 class="center-align">Welcome to my portfolio website</h1>
             </header>
 
             <!--PERSONAL STATEMENT-->
@@ -44,7 +43,9 @@
                     all things web. I have a keen eye on devOps principles, testing and good coding practices.
                 </p>
                 <p>
-                    I am currently working on projects in the Linked Data and Semantic Web space at the
+                    I am currently working on projects in the
+                    <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> and
+                    <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a> space at the
                     <a href="http://www.csiro.au">Commonwealth Scientific and Industrial Research Organisation</a>
                     (CSIRO).
                 </p>
@@ -55,37 +56,88 @@
             <div class="section">
                 <h2>Education</h2>
 
-                <div class="row">
-                    <div class="col m3.5" style="min-width: 340px;">
-                        <div class="card-panel blue accent-1">
-                            <span class="white-text">
-                                <p class="degree-location">Griffith University</p>
-                                <p class="degree-title">Bachelor of Computer Science</p>
-                                <p class="degree-major">Major in Software Development</p>
-                                <p>Year 2018</p>
-                            </span>
+                <div style="text-align: center;"> <!-- center the education cards -->
+                    <div class="row" style="display: inline-block">
+                        <div class="col m3.5" style="min-width: 340px;">
+                            <div class="card-panel blue accent-1">
+                                <span class="white-text">
+                                    <p class="degree-location">Griffith University</p>
+                                    <p class="degree-title">Bachelor of Computer Science</p>
+                                    <p class="degree-major">Major in Software Development</p>
+                                    <p>Year 2018</p>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col m3.5" style="min-width: 340px;">
-                        <div class="card-panel blue accent-1" >
-                            <span class="white-text">
-                                <p class="degree-location">SAE Institute</p>
-                                <p class="degree-title">Bachelor of Interactive Media</p>
-                                <p class="degree-major">Major in Games Design</p>
-                                <p>Year 2014</p>
-                            </span>
+                        <div class="col m3.5" style="min-width: 340px;">
+                            <div class="card-panel blue accent-1" >
+                                <span class="white-text">
+                                    <p class="degree-location">SAE Institute</p>
+                                    <p class="degree-title">Bachelor of Interactive Media</p>
+                                    <p class="degree-major">Major in Games Design</p>
+                                    <p>Year 2014</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!--SELECTED WORK-->
             <div class="divider"></div>
             <div class="section">
                 <h2>Selected Work</h2>
-                <p>CSIRO</p>
-                <p>Location Index</p>
+
+                <!--LOCATION INDEX-->
+                <p class="project-name">Location Index</p>
+                <p class="project-location">CSIRO</p>
+                <p>
+                    I am part of the technical infrastructure team constructing Australia’s first distributed,
+                    large-scaled Linked Data system to solve data interoperability issues across government
+                    organisations. I recreated the functionality of CSIRO’s Persistent Identifier Service in Apache as a
+                    light-weight alternative and assisted in implementing new persistent identifiers for the
+                    <a href="http://www.linked.data.gov.au/">Australian Government Linked Data Working Group</a>. I
+                    configured a Geoserver instance to serve the <a href="http://www.bom.gov.au/">Bureau of Meteorology's</a> <a href="http://www.bom.gov.au/water/geofabric/">Geofabric dataset</a> overlaid on top of OpenStreetMaps
+                    as a WFS and WMS.
+                </p>
+                <!--END LOCATION INDEX-->
             </div>
+
+
         </div> <!--END CONTENT-->
+
+        <!--FOOTER-->
+        <footer class="page-footer blue accent-1">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col 16 m4"> &lt;!&ndash; LOGO &ndash;&gt;-->
+                        <!--<h3>Edmond Chuc</h3>-->
+                    <!--</div>-->
+                    <div class="col 16 m4"> <!-- CONTACT ME -->
+                        <h3>Contact me</h3>
+                        <ul><li>TODO</li></ul>
+                    </div>
+                    <div class="col 16 m4"> <!-- SOCIAL MEDIA -->
+                        <h3>Follow me on social media</h3>
+                         <ul>
+                             <li><a href="https://www.linkedin.com">LinkedIn (TODO)</a></li>
+                             <li><a href="https://github.com/edmondchuc">GitHub</a></li>
+                             <li><a href="https://www.facebook.com/edmond.chuc">Facebook</a></li>
+                             <li><a href="https://www.instagram.com/edmondchuc/">Instagram</a></li>
+                             <li><a href="https://twitter.com/EdmondChuc">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--COPYRIGHT-->
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="center-align" style="font-size: 12pt;">&copy; Edmond Chuc, 2018</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
