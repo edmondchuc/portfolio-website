@@ -14,16 +14,17 @@
         <!-- Override some of the materializecss styling -->
         <link rel="stylesheet" href="static/css/index.css">
     </head>
+
     <body>
         <!--HEADER-->
         <header>
-            <div class="navbar-fixed"> <!-- keep navbar-fixed and nav's margin-bottom and height the same px. -->
+            <div class="navbar-fixed nav-pos-default"> <!-- keep navbar-fixed and nav's margin-bottom and height the same px. -->
                 <nav class="blue accent-1">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href="#!" class="brand-logo" style="min-width: 200px;">Edmond Chuc</a> <!-- set min-width so the nav logo does not break -->
+                            <a href="#!" class="brand-logo logo-pos-default" style="min-width: 200px;">Edmond Chuc</a> <!-- set min-width so the nav logo does not break -->
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger right" style="text-decoration: none;"><i class="material-icons">menu</i></a>
-                            <ul class="right hide-on-med-and-down">
+                            <ul class="right hide-on-med-and-down side-nav-pad">
                                 <li><a href="#!" onclick="M.toast({html: 'Coming soon!'})">CV</a></li>
                             </ul>
                         </div>
@@ -32,240 +33,247 @@
             </div>
         </header>
 
+        <!--TABLE OF CONTENTS-->
+        <!--<div class="col hide-on-med-and-down"> &lt;!&ndash;ONLY ON LARGE SCREENS&ndash;&gt;-->
+            <!--<div class="toc-wrapper pinned z-depth-1 white ">-->
+                <!--<img class="responsive-img circle materialboxed" src="http://www.edmondchuc.com/static/img/me-pic.jpg" style="width: 100px; margin-left: 20px; margin-top: 20px;">-->
+                <!--<ul class="section table-of-contents" style="padding: 15px;">-->
+                    <!--<a href="#about">About</a><br>-->
+                    <!--<a href="#education">Education</a><br>-->
+                    <!--<a href="#selected-work">Selected Work</a><br>-->
+                    <!--<a href="#loc-i" style="padding-left: 30px;">&#2975 Location Index</a><br>-->
+                    <!--<a href="#lode2" style="padding-left: 30px;">&#2975 LODE 2</a><br>-->
+                    <!--<a href="#skills">Skills</a><br>-->
+                    <!--<a href="#contact-me">Contact Me</a><br>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <ul class="sidenav sidenav-fixed" id="nav-mobile">
+            <img class="responsive-img circle materialboxed" src="http://www.edmondchuc.com/static/img/me-pic.jpg" style="width: 100px; margin-left: 100px; margin-top: 20px; margin-bottom: 20px;">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#selected-work">Selected Work</a></li>
+            <li><a href="#loc-i" style="padding-left: 30px;">&#2975 Location Index</a></li>
+            <li><a href="#lode2" style="padding-left: 30px;">&#2975 LODE 2</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+
+
         <!--CONTENT-->
         <div class="container">
-            <div class="row">
 
-                <!--TABLE OF CONTENTS-->
-                <div class="col hide-on-med-and-down m3 offset-m11"> <!--ONLY ON LARGE SCREENS-->
-                    <div class="toc-wrapper pinned">
-                        <ul class="section table-of-contents white hoverable" style="padding: 20px; width: 200px;">
-                            <a href="#about">About</a><br>
-                            <div class="divider"></div>
-                            <a href="#education">Education</a><br>
-                            <div class="divider"></div>
-                            <a href="#selected-work">Selected Work</a><br>
-                            <div class="divider"></div>
-                            <a href="#loc-i">- Location Index</a><br>
-                            <div class="divider"></div>
-                            <a href="#lode2">- LODE 2</a><br>
-                            <div class="divider"></div>
-                            <a href="#contact-me">Contact Me</a><br>
-                        </ul>
+            <!--TABLE OF CONTENTS SMALL AND MEDIUM SCREENS-->
+            <ul class="sidenav sidenav-close" id="mobile-nav">
+                <img class="responsive-img circle" src="http://www.edmondchuc.com/static/img/me-pic.jpg" style="width: 100px; margin-left: 100px; margin-top: 20px;">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#selected-work">Selected Work</a></li>
+                <li><a href="#loc-i">&#2975 Location Index</a></li>
+                <li><a href="#lode2">&#2975 LODE 2</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <div class="divider"></div>
+                <li><a href="#!" onclick="M.toast({html: 'Coming soon!'})">CV</a></li>
+            </ul>
+
+            <!--ABOUT-->
+            <div class="section scrollspy" id="about">
+                <h2>About</h2>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel white">
+                            <p>
+                                I am a software developer based in Brisbane, Australia. I have a passion for software development
+                                and software architecture. I love learning new programming languages, software design patterns and
+                                all things web. I have a keen eye on devOps principles, testing and good coding practices.
+                            </p>
+                            <p>
+                                I am currently working on projects in the
+                                <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> and
+                                <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a> space at the
+                                <a href="http://www.csiro.au">Commonwealth Scientific and Industrial Research Organisation</a>
+                                (CSIRO).
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <ul class="sidenav" id="mobile-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#selected-work">Selected Work</a></li>
-                    <li><a href="#loc-i">- Location Index</a></li>
-                    <li><a href="#lode2">- LODE 2</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="#!" onclick="M.toast({html: 'Coming soon!'})">CV</a></li>
-                </ul>
-                <!--<div class="col hide-on-small-only hide-on-large-only m3 offset-m10">-->
-                    <!--<div class="toc-wrapper pinned">-->
-                        <!--<ul class="section table-of-contents white hoverable" style="padding: 20px; width: 200px; margin-left: 50px;">-->
-                            <!--<a href="#personal-statement">About</a><br>-->
-                            <!--<div class="divider"></div>-->
-                            <!--<a href="#education">Education</a><br>-->
-                            <!--<div class="divider"></div>-->
-                            <!--<a href="#selected-work">Selected<br>Work</a><br>-->
-                            <!--<div class="divider"></div>-->
-                            <!--<a href="#loc-i">- Location<br>Index</a><br>-->
-                            <!--<div class="divider"></div>-->
-                            <!--<a href="#lode2">- LODE 2</a><br>-->
-                            <!--<div class="divider"></div>-->
-                            <!--<a href="#contact-me">Contact Me</a><br>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
 
-                <div class="col s12">
+            </div>
 
-                    <!--ABOUT-->
-                    <div class="section scrollspy" id="about">
-                        <h2>About</h2>
+            <!--EDUCATION-->
+            <div class="divider"></div>
+            <div class="section scrollspy" id="education">
+                <h2>Education</h2>
 
-                        <div class="row">
-                            <div class="col s12 m10 offset-m1 xl8 offset-xl2">
-                                <div class="card-panel white">
-                                    <p>
-                                        I am a software developer based in Brisbane, Australia. I have a passion for software development
-                                        and software architecture. I love learning new programming languages, software design patterns and
-                                        all things web. I have a keen eye on devOps principles, testing and good coding practices.
-                                    </p>
-                                    <p>
-                                        I am currently working on projects in the
-                                        <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> and
-                                        <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a> space at the
-                                        <a href="http://www.csiro.au">Commonwealth Scientific and Industrial Research Organisation</a>
-                                        (CSIRO).
-                                    </p>
-                                </div>
+                <div class="center-align">
+                    <div class="row" style="display: inline-block; text-align: left;">
+                        <div class="col s12" style="width: 350px;">
+                            <div class="card-panel blue accent-1">
+                                <span class="white-text">
+                                    <p class="degree-location">Griffith University</p>
+                                    <p class="degree-title">Bachelor of Computer Science</p>
+                                    <p class="degree-major">Major in Software Development</p>
+                                    <p>Year 2018</p>
+                                </span>
                             </div>
                         </div>
-
+                        <div class="col s12" style="width: 350px;">
+                            <div class="card-panel blue accent-1" >
+                                <span class="white-text">
+                                    <p class="degree-location">SAE Institute</p>
+                                    <p class="degree-title">Bachelor of Interactive Media</p>
+                                    <p class="degree-major">Major in Games Design</p>
+                                    <p>Year 2014</p>
+                                </span>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <!--EDUCATION-->
-                    <div class="divider"></div>
-                    <div class="section scrollspy" id="education">
-                        <h2>Education</h2>
 
-                        <div class="center-align">
-                            <div class="row" style="display: inline-block; text-align: left;">
-                                <div class="col s12" style="width: 350px;">
+
+            </div>
+
+            <!--SELECTED WORK-->
+            <div class="divider"></div>
+            <div class="section scrollspy" id="selected-work">
+                <h2>Selected Work</h2>
+
+                <!--LOCATION INDEX-->
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel white scrollspy" id="loc-i">
+                            <p class="project-name">Location Index</p>
+                            <p class="project-location">CSIRO</p>
+                            <p>
+                                I am part of the technical infrastructure team in constructing Australia’s first distributed,
+                                large-scaled Linked Data network system to solve data interoperability limitations across government
+                                organisations. To allow different datasets from different organisations to understand each other,
+                                a set of common relationships need to be established. Most <em>things</em> have a location property, therefore
+                                a set of authoritative spatial datasets of Australia will be used to bridge different datasets from different organisations and allow for <em>schema crosswalks</em>.
+                            </p>
+                            <p>
+                                I helped recreate the functionality of CSIRO’s <a href="https://www.seegrid.csiro.au/wiki/Siss/PIDService">Persistent Identifier Service</a> in Apache as a
+                                light-weight alternative and assisted in implementing new persistent URI identifiers for the
+                                <a href="http://www.linked.data.gov.au/">Australian Government Linked Data Working Group</a>.
+                            </p>
+                            <p>
+                                I configured a Geoserver instance to serve the <a href="http://www.bom.gov.au/">Bureau of Meteorology's</a>
+                                <a href="http://www.bom.gov.au/water/geofabric/">Geofabric dataset</a> via Web Feature Service (WFS) and Web Map Service (WMS) APIs.
+                                The features of the Geofabric dataset were visualised through the WMS overlaid on top of a styled <a href="https://en.wikipedia.org/wiki/OpenStreetMap">OpenStreetMaps</a>.
+                            </p>
+                            <p>
+                                I worked on the web APIs that served the spatial datasets as Linked Data.
+                            </p>
+                            <div class="container z-depth-1 hoverable">
+                                <img class="responsive-img materialboxed" src="http://edmondchuc.com/static/img/geof-rr.png">
+                                <div class="container">
+                                    <p class="label">Figure: A screenshot of the Linked Data API serving a feature from the Geofabric dataset through a WMS.</p>
+                                    <p class="label center-align"><a href="http://geofabricld.net/riverregion/9400223">View the web page.</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
                                     <div class="card-panel blue accent-1 hoverable">
                                         <span class="white-text">
-                                            <p class="degree-location">Griffith University</p>
-                                            <p class="degree-title">Bachelor of Computer Science</p>
-                                            <p class="degree-major">Major in Software Development</p>
-                                            <p>Year 2018</p>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col s12" style="width: 350px;">
-                                    <div class="card-panel blue accent-1 hoverable" >
-                                        <span class="white-text">
-                                            <p class="degree-location">SAE Institute</p>
-                                            <p class="degree-title">Bachelor of Interactive Media</p>
-                                            <p class="degree-major">Major in Games Design</p>
-                                            <p>Year 2014</p>
+                                            <p class="label no-pad bold">Technologies:</p>
+                                            <p class="label no-pad">
+                                                Python, Flask, HTML, CSS, Linked Data, Semantic Web,
+                                                Geoserver, Web Feature Service, Web Map Service, Apache, PostgreSQL,
+                                                AWS.
+                                            </p>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
+                </div> <!--END LOCATION INDEX-->
 
-                    <!--SELECTED WORK-->
-                    <div class="divider"></div>
-                    <div class="section scrollspy" id="selected-work">
-                        <h2>Selected Work</h2>
-
-                        <!--LOCATION INDEX-->
-                        <div class="row">
-                            <div class="col s12 m10 offset-m1 xl8 offset-xl2">
-                                <div class="card-panel white scrollspy" id="loc-i">
-                                    <p class="project-name">Location Index</p>
-                                    <p class="project-location">CSIRO</p>
-                                    <p>
-                                        I am part of the technical infrastructure team in constructing Australia’s first distributed,
-                                        large-scaled Linked Data network system to solve data interoperability limitations across government
-                                        organisations. To allow different datasets from different organisations to understand each other,
-                                        a set of common relationships need to be established. Most <em>things</em> have a location property, therefore
-                                        a set of authoritative spatial datasets of Australia will be used to bridge different datasets from different organisations and allow for <em>schema crosswalks</em>.
+                <!--LODE2-->
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel white scrollspy" id="lode2">
+                            <p class="project-name">LODE 2</p>
+                            <p class="project-location">CSIRO</p>
+                            <p>
+                                Ontologies and the Linked Data technology stack are key to the success of data
+                                interoperability. The make-up of ontologies are extremely machine-readable, but not
+                                so much for humans. LODE 2 helps with expressing these ontologies in a
+                                human-readable way.
+                            </p>
+                            <p>
+                                LODE 2 is a Linked Data tool for extracting classes, objects, properties, data
+                                properties, named individuals, annotation properties, general axioms and namespace
+                                declarations from an OWL and OWL2 ontology. They are rendered in an ordered list
+                                along with their textual definitions in a human-readable HTML web document.
+                            </p>
+                            <p>
+                                I updated the existing codebase and rewrote the web architecture of the tool,
+                                removing the need for an Apache server, PHP and jQuery. Today, the tool functions
+                                completely as a Java web application. I fixed some templating issues and implemented
+                                WebVOWL, an ontology visualiser.
+                            </p>
+                            <div class="container z-depth-1 hoverable">
+                                <img class="responsive-img materialboxed" src="http://www.edmondchuc.com/static/img/lode2-foaf-sample.png">
+                                <div class="container">
+                                    <p class="label">
+                                        Figure: A screenshot of the FOAF ontology as a HTML web document.
+                                        The WebVOWL ontology visualiser can be seen expressing the ontology as a directed graph.
                                     </p>
-                                    <p>
-                                        I helped recreate the functionality of CSIRO’s <a href="https://www.seegrid.csiro.au/wiki/Siss/PIDService">Persistent Identifier Service</a> in Apache as a
-                                        light-weight alternative and assisted in implementing new persistent URI identifiers for the
-                                        <a href="http://www.linked.data.gov.au/">Australian Government Linked Data Working Group</a>.
-                                    </p>
-                                    <p>
-                                        I configured a Geoserver instance to serve the <a href="http://www.bom.gov.au/">Bureau of Meteorology's</a>
-                                        <a href="http://www.bom.gov.au/water/geofabric/">Geofabric dataset</a> via Web Feature Service (WFS) and Web Map Service (WMS) APIs.
-                                        The features of the Geofabric dataset were visualised through the WMS overlaid on top of a styled <a href="https://en.wikipedia.org/wiki/OpenStreetMap">OpenStreetMaps</a>.
-                                    </p>
-                                    <p>
-                                        I worked on the web APIs that served the spatial datasets as Linked Data.
-                                    </p>
-                                    <div class="container z-depth-1 hoverable">
-                                        <img class="responsive-img" src="http://edmondchuc.com/static/img/geof-rr.png">
-                                        <div class="container">
-                                            <p class="label">Figure: A screenshot of the Linked Data API serving a feature from the Geofabric dataset through a WMS.</p>
-                                            <p class="label center-align"><a href="http://geofabricld.net/riverregion/9400223">View the web page.</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <div class="card-panel blue accent-1 hoverable">
-                                                <span class="white-text">
-                                                    <p class="label no-pad bold">Technologies:</p>
-                                                    <p class="label no-pad">
-                                                        Python, Flask, HTML, CSS, Linked Data, Semantic Web,
-                                                        Geoserver, Web Feature Service, Web Map Service, Apache, PostgreSQL,
-                                                        AWS.
-                                                    </p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p class="label center-align"><a href="http://lode2.linked.data.gov.au/">View the LODE 2 tool online.</a></p>
                                 </div>
                             </div>
-                        </div> <!--END LOCATION INDEX-->
-
-                        <!--LODE2-->
-                        <div class="row">
-                            <div class="col s12 m10 offset-m1 xl8 offset-xl2">
-                                <div class="card-panel white scrollspy" id="lode2">
-                                    <p class="project-name">LODE 2</p>
-                                    <p class="project-location">CSIRO</p>
-                                    <p>
-                                        Ontologies and the Linked Data technology stack are key to the success of data
-                                        interoperability. The make-up of ontologies are extremely machine-readable, but not
-                                        so much for humans. LODE 2 helps with expressing these ontologies in a
-                                        human-readable way.
-                                    </p>
-                                    <p>
-                                        LODE 2 is a Linked Data tool for extracting classes, objects, properties, data
-                                        properties, named individuals, annotation properties, general axioms and namespace
-                                        declarations from an OWL and OWL2 ontology. They are rendered in an ordered list
-                                        along with their textual definitions in a human-readable HTML web document.
-                                    </p>
-                                    <p>
-                                        I updated the existing codebase and rewrote the web architecture of the tool,
-                                        removing the need for an Apache server, PHP and jQuery. Today, the tool functions
-                                        completely as a Java web application. I fixed some templating issues and implemented
-                                        WebVOWL, an ontology visualiser.
-                                    </p>
-                                    <div class="container z-depth-1 hoverable">
-                                        <img class="responsive-img" src="http://www.edmondchuc.com/static/img/lode2-foaf-sample.png">
-                                        <div class="container">
-                                            <p class="label">
-                                                Figure: A screenshot of the FOAF ontology as a HTML web document.
-                                                The WebVOWL ontology visualiser can be seen expressing the ontology as a directed graph.
+                            <p>
+                                LODE 2 is currently being used by the
+                                <a href="http://www.linked.data.gov.au/">Australian Government Linked Data Working Group</a>
+                                (AGLDWG) and the Linked Data community.
+                            </p>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card-panel blue accent-1 hoverable">
+                                        <span class="white-text">
+                                            <p class="label no-pad bold">Technologies:</p>
+                                            <p class="label no-pad">
+                                                Apache, PHP, jQuery, Java, Java EE, Maven, Tomcat, Jetty, Linked Data, Semantic Web, AWS,
+                                                HTML, CSS, XSLT, PHP.
                                             </p>
-                                            <p class="label center-align"><a href="http://lode2.linked.data.gov.au/">View the LODE 2 tool online.</a></p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        LODE 2 is currently being used by the
-                                        <a href="http://www.linked.data.gov.au/">Australian Government Linked Data Working Group</a>
-                                        (AGLDWG) and the Linked Data community.
-                                    </p>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <div class="card-panel blue accent-1 hoverable">
-                                                <span class="white-text">
-                                                    <p class="label no-pad bold">Technologies:</p>
-                                                    <p class="label no-pad">
-                                                        Apache, PHP, jQuery, Java, Java EE, Maven, Tomcat, Jetty, Linked Data, Semantic Web, AWS,
-                                                        HTML, CSS, XSLT, PHP.
-                                                    </p>
-                                                </span>
-                                            </div>
-                                        </div>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!--END OF LODE2-->
-                    </div> <!--END OF SELECTED WORK-->
+                        </div>
+                    </div>
+                </div> <!--END OF LODE2-->
+            </div> <!--END OF SELECTED WORK-->
 
-                    <!--CONTACT ME-->
-                    <div class="divider"></div>
-                    <div class="section scrollspy" id="contact-me">
-                        <h2>Contact Me</h2>
+            <!--SKILLS-->
+            <div class="divider"></div>
+            <div class="section scrollspy" id="skills">
+                <h2>Skills</h2>
 
-                        <div class="row">
-                            <div class="col s12 m10 offset-m1 xl8 offset-xl2">
-                                <div class="card-panel white">
-                                    <em>Coming soon.</em>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel white">
+                            <em>Coming soon.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CONTACT ME-->
+            <div class="divider"></div>
+            <div class="section scrollspy" id="contact-me">
+                <h2>Contact Me</h2>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel white">
+                            <em>Coming soon.</em>
                         </div>
                     </div>
                 </div>
@@ -317,6 +325,9 @@
 
                 /*LOAD SIDENAV FOR MOBILE*/
                 $('.sidenav').sidenav();
+
+                /*FOR MATERIAL BOX IMAGE MODAL POPUPS*/
+                $('.materialboxed').materialbox();
             });
         </script>
     </body>
