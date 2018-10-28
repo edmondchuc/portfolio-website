@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Edmond Chuc</title>
 
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -18,7 +21,11 @@
                 <nav class="blue accent-1">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <div href="#!" class="brand-logo" style="min-width: 200px;">Edmond Chuc</div> <!-- set min-width so the nav logo does not break -->
+                            <a href="#!" class="brand-logo" style="min-width: 200px;">Edmond Chuc</a> <!-- set min-width so the nav logo does not break -->
+                            <a href="#" data-target="mobile-nav" class="sidenav-trigger right" style="text-decoration: none;"><i class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="#!" onclick="M.toast({html: 'Coming soon!'})">CV</a></li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -30,10 +37,10 @@
             <div class="row">
 
                 <!--TABLE OF CONTENTS-->
-                <div class="col hide-on-small-only hide-on-med-only m3 offset-m11">
+                <div class="col hide-on-med-and-down m3 offset-m11"> <!--ONLY ON LARGE SCREENS-->
                     <div class="toc-wrapper pinned">
                         <ul class="section table-of-contents white hoverable" style="padding: 20px; width: 200px;">
-                            <a href="#personal-statement">Personal Statement</a><br>
+                            <a href="#about">About</a><br>
                             <div class="divider"></div>
                             <a href="#education">Education</a><br>
                             <div class="divider"></div>
@@ -47,34 +54,38 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col hide-on-small-only hide-on-large-only m3 offset-m11">
-                    <div class="toc-wrapper pinned">
-                        <ul class="section table-of-contents white hoverable" style="padding: 20px; width: 200px;">
-                            <a href="#personal-statement">Personal<br>Statement</a><br>
-                            <div class="divider"></div>
-                            <a href="#education">Education</a><br>
-                            <div class="divider"></div>
-                            <a href="#selected-work">Selected<br>Work</a><br>
-                            <div class="divider"></div>
-                            <a href="#loc-i">- Location<br>Index</a><br>
-                            <div class="divider"></div>
-                            <a href="#lode2">- LODE 2</a><br>
-                            <div class="divider"></div>
-                            <a href="#contact-me">Contact Me</a><br>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="sidenav" id="mobile-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#selected-work">Selected Work</a></li>
+                    <li><a href="#loc-i">- Location Index</a></li>
+                    <li><a href="#lode2">- LODE 2</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="#!" onclick="M.toast({html: 'Coming soon!'})">CV</a></li>
+                </ul>
+                <!--<div class="col hide-on-small-only hide-on-large-only m3 offset-m10">-->
+                    <!--<div class="toc-wrapper pinned">-->
+                        <!--<ul class="section table-of-contents white hoverable" style="padding: 20px; width: 200px; margin-left: 50px;">-->
+                            <!--<a href="#personal-statement">About</a><br>-->
+                            <!--<div class="divider"></div>-->
+                            <!--<a href="#education">Education</a><br>-->
+                            <!--<div class="divider"></div>-->
+                            <!--<a href="#selected-work">Selected<br>Work</a><br>-->
+                            <!--<div class="divider"></div>-->
+                            <!--<a href="#loc-i">- Location<br>Index</a><br>-->
+                            <!--<div class="divider"></div>-->
+                            <!--<a href="#lode2">- LODE 2</a><br>-->
+                            <!--<div class="divider"></div>-->
+                            <!--<a href="#contact-me">Contact Me</a><br>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
 
                 <div class="col s12">
-                    <!--TITLE-->
-                    <header>
-                        <h1 class="center-align">My Portfolio Website</h1>
-                    </header>
 
-                    <!--PERSONAL STATEMENT-->
-                    <div class="divider"></div>
-                    <div class="section scrollspy" id="personal-statement">
-                        <h2>Personal Statement</h2>
+                    <!--ABOUT-->
+                    <div class="section scrollspy" id="about">
+                        <h2>About</h2>
 
                         <div class="row">
                             <div class="col s12 m10 offset-m1 xl8 offset-xl2">
@@ -303,6 +314,9 @@
 
                 /*LOAD SCROLLSPY*/
                 $('.scrollspy').scrollSpy();
+
+                /*LOAD SIDENAV FOR MOBILE*/
+                $('.sidenav').sidenav();
             });
         </script>
     </body>
