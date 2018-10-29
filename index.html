@@ -270,14 +270,52 @@
             <div class="section scrollspy" id="contact-me">
                 <h2>Contact Me</h2>
 
+                <!--<div class="row">-->
+                    <!--<div class="col s12">-->
+                        <!--<div class="card-panel white">-->
+                            <!--<em>Coming soon.</em>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <div class="row">
-                    <div class="col s12">
-                        <div class="card-panel white">
-                            <em>Coming soon.</em>
+                    <form class="col s12" action="http://www.edmondchuc.com/api/contact" method="post">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate" name="first_name">
+                                <label for="first_name">First Name (required)</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate" name="last_name">
+                                <label for="last_name">Last Name</label>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="text" class="validate" name="email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="phone" type="text" class="validate" name="phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="message" type="text" class="validate" name="message">
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="btn waves-effect waves-light blue accent-1" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
+
+
+
         </div> <!--END CONTENT-->
 
 
