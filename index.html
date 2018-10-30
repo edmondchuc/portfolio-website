@@ -279,12 +279,18 @@
                 <!--</div>-->
                 <div class="row">
                     <script>
-                        function validateContactForm(s) {
-                            console.log($('message'));
+                        function validateContactForm() {
+                            let size = document.getElementById("message").value.length;
+                            if(size > 1000) {
+                                alert('Your message is too long!');
+                                return false;
+                            } else {
+                                return true;
+                            }
                         }
                     </script>
                     <div class="card-panel white">
-                        <form action="" method="post" onsubmit="validateContactForm(this)">
+                        <form action="http://www.edmondchuc.com/api/test" method="post" onsubmit="return validateContactForm()">
                             <div class="row">
                                 <div class="input-field col s6">
                                     <input id="first_name" type="text" class="validate" name="first_name" required>
@@ -308,7 +314,7 @@
                             <div class="row">
                                 <div class="input-field col s12">
 
-                                    <textarea id="message" class="materialize-textarea" data-length="10" name="message" required></textarea>
+                                    <textarea id="message" class="materialize-textarea" data-length="1000" name="message" required></textarea>
                                     <label for="message">Message (required)</label>
                                 </div>
                             </div>

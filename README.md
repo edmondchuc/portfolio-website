@@ -18,3 +18,5 @@ Add to social media
 
 Add to all icons:
 * Tooltip to say what the icon is
+
+Add favicon and a proper template to respond back to client for route /api/contact
