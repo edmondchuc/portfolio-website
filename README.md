@@ -1,16 +1,3 @@
-# Portfolio Website Backend
-## API
-The website's API:
-### Contact Form
-`/api/contact`
-
-### Test
-`/api/test`
-
-### GitHub Webhook
-`/api/postreceive`
-
-
 # TODO Task
 
 Add to side-nav:
