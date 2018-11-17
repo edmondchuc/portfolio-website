@@ -1,6 +1,4 @@
 # TODO
-Add to navbar:
-* CV link
 
 Add to side-nav:
 * wave effect on press
